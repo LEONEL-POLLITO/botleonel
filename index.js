@@ -421,7 +421,7 @@ MrG.on('group-participants-update', async (anu) => {
 
 				}
 
-				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Intro/Dikick!!! \n➸ Nama : \n➸ Umur : \n➸ Askot : \n➸ Gender : \n➸ Udah Punya Doi/Blm: \n➸ Pap Muka dumlu!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 𝐍𝐨𝐦𝐨𝐫 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nJangan jadi kutu lomcat sayang!!`
+				teks = `[ *😚HOLA,BIENVENIDO A ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Info/nena!!! \n *___________________________*\n LEE LAS REGLAS PARA NO TENER MALOS ENTENDIDOS!!`
 
 				let buff = await getBuffer(ppimg)
 
@@ -441,7 +441,7 @@ MrG.on('group-participants-update', async (anu) => {
 
 				}
 
-				teks = `SELAMAT TINGGAL... @${num.split('@')[0]}👋* \n_Jasamu akan saya kubur dalam dalam_`
+				teks = `ADIOS AMOR... @${num.split('@')[0]}👋* \n_NO TE AMAMOS NI TE QUEREMOS_`
 
 				let buff = await getBuffer(ppimg)
 
@@ -768,17 +768,17 @@ buffer = await getBuffer(me.imgUrl)
 				    const uangku = checkATMuser(sender)
 shiz = `┏━━━━《 *${botName}*  シ︎ 》━━━━
 ┃
-┃ ❏ *NAMA : ${pushname}*
+┃ ❏ *NOMBRE : ${pushname}*
 ┃ ❏ *Prefix*: 「 ${prefix} 」
-┃ ❏ *UANG : Rp:${uangku}*
-┃ ❏ *Totar: ${mek.length}*
+┃ ❏ *velocidad : Rp:${uangku}*
+┃ ❏ *Total: ${mek.length}*
 ┃
 ┣ ❏ *ABOUT BOT* 」
 ┃
 ┣ ❏ *${prefix}info*
 ┣ ❏ *${prefix}ping*
 ┣ ❏ *${prefix}donasi*
-┣ ❏ *${prefix}owner* 
+┣ ❏ *${prefix}pack* 
 ┃
 ┣ ❏ *ANIME MENU* 」
 ┃
@@ -1119,14 +1119,14 @@ shiz = `┏━━━━《 *${botName}*  シ︎ 》━━━━
 ┣ ❏ *${prefix}terpesona*
 ┣ ◪ *Thanks To*
 ┃
-┣ ❏ *Mr.108P*
-┣ ❏ *SofyanAmv*
-┣ ❏ *Ivan_maulana*
-┣ ❏ *Arashi~*
-┣ ❏ *Mr.A43G*
-┣ ❏ *ItsmeikyXSec404*
-┣ ❏ *Fadhill*
-┣ ❏ *Ramlan*
+┣ ❏ *JOKER*
+┣ ❏ *KAYT*
+┣ ❏ *MERRY CAMPANITA*
+┣ ❏ *NYAN*
+┣ ❏ *NENAFLOW*
+┣ ❏ *LUCIFER*
+┣ ❏ *LM*
+┣ ❏ *BOTREM*
 ┃
 ┗━━━━《 🤖BOT🤖ৣ››⸸ғᴋ᭭-ʟᷤᴇͤᴏͧɴͪᴇͤʟᷤ⸸-X シ︎ 》━━━━`
 MrG.sendMessage(from, buffer, image, { quoted: mek, caption: shiz })
@@ -1534,7 +1534,7 @@ case 'speed'://UPDATE FIX BUG
 					} catch {
 					profil = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					 profile = `╭─「 *PROFILE ANDA* 」\n│• *Name:* ${pushname}\n│• *User Terdaftar:* ✓\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰─────────────────────`
+					 profile = `╭─「 *PROFILE ANDA* 」\n│• *NOMBRE:* ${pushname}\n│• *User Terdaftar:* ✓\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰─────────────────────`
 					buff = await getBuffer(profil)
 					MrG.sendMessage(from, buff, image, {quoted: mek, caption: profile})
 					break
@@ -3825,11 +3825,11 @@ case 'antidelete':
 						if (isEventon) return reply('*SUDAH AKTIF* !!!')
 						antilink.push(from)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ ACTIVATED ANTILINK*')
+						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ ACTIVATEDO ANTILINK*')
 					} else if (Number(args[0]) === 0) {
 						antilink.splice(from, 1)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ DEACTIVATED ANTILINK*')
+						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ DEACTIVADO ANTILINK*')
 					} else {
 						reply(ind.satukos())
 					}
@@ -3936,7 +3936,7 @@ case 'antidelete':
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
                 const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
-                resul = `┏━━━━━━♡ *LEVEL* ♡━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMOR : wa.me/${sender.split("@")[0]}\n┃│➸ XP : ${userXp}/${requiredXp}\n┃│➸ LEVEL : ${userLevel}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
+                resul = `┏━━━━━━♡ *LEVEL* ♡━━━━━━━┓\n┃╭───────────────────\n┃│➸ NOMBRE : ${pushname}\n┃│➸ NUMERO : wa.me/${sender.split("@")[0]}\n┃│➸ XP : ${userXp}/${requiredXp}\n┃│➸ LEVEL : ${userLevel}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
                MrG.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
@@ -4095,7 +4095,7 @@ case 'mining':
 					case 'info':
 					me = MrG.user
 					uptime = process.uptime()
-					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : 𝗥𝗮𝗺𝗹𝗮𝗻 𝗜𝗗\n*➸ AUTHOR* : ${ownerName}\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}`
+					teks = `*➸ NOMBRE bot* : ${me.name}\n*➸ OWNER* : 𝗥𝗮𝗺𝗹𝗮𝗻 𝗜𝗗\n*➸ AUTHOR* : ${ownerName}\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					MrG.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
