@@ -1128,7 +1128,7 @@ shiz = `┏━━━━《 *${botName}*  シ︎ 》━━━━
 ┣ ❏ *Fadhill*
 ┣ ❏ *Ramlan*
 ┃
-┗━━━━《 Rem Bot -X シ︎ 》━━━━`
+┗━━━━《 🤖BOT🤖ৣ››⸸ғᴋ᭭-ʟᷤᴇͤᴏͧɴͪᴇͤʟᷤ⸸-X シ︎ 》━━━━`
 MrG.sendMessage(from, buffer, image, { quoted: mek, caption: shiz })
 const menu2 = fs.readFileSync('./assest/menu2.mp3');
 MrG.sendMessage(from, menu2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
