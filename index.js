@@ -1160,7 +1160,7 @@ case 'afk'://UPDATE MR.108P
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `╭─「 *_ᴘᴇɴᴅᴀғᴛᴀʀᴀɴ_* 」\`\`\`\n│ ᴘᴇɴᴅᴀғᴛᴀʀᴀɴ ʙᴇʀʜᴀꜱɪʟ ꜱɴ: \n│TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`ᴘᴀᴅᴀ  ${time}\`\`\`\n│\`\`\`「 ɴᴀᴍᴀ 」: ${pushname}\`\`\`\n│\`\`\`「 ɴᴏᴍᴏʀ 」: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ\`\`\`\n│\`\`\`ꜱɪʟᴀʜᴋᴀɴ\`\`\`\n│\`\`\`ᴋɪʀɪᴍ ${prefix}menu\`\`\`\n│\`\`\`\n`
+					captionnya = `╭─「 *_REGISTRADO❤_* 」\`\`\`\n│ REGISTRADO EXITOSAMENTE SN: \n│TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`EN  ${time}\`\`\`\n│\`\`\`「 NOMBRE 」: ${pushname}\`\`\`\n│\`\`\`「 NUMERO 」: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`PARA USAR EL BOT\`\`\`\n│\`\`\`PORFAVOR AMOR💕\`\`\`\n│\`\`\`ENVIAR ${prefix}menu\`\`\`\n│\`\`\`\n`
 					addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
                     console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
 					brando = await getBuffer(`https://pencarikode.xyz/api/cita-cita?apikey=pais`, {method: 'get'})                
